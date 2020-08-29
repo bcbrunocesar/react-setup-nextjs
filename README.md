@@ -1,30 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+. Criar o projeto com o next-app
+  yarn create next-app react-setup
 
-## Getting Started
+. Adicionar typescript, @types node e react
+  yarn -D add typescript @types/react @types/node
 
-First, run the development server:
+. Adicionar eslint
+  yarn -D add eslint
+  yarn eslint --init
+    > To check syntax, find problems, and enforce code style.
+    > JavasScript modules (import/ export)
+    > React
+    > Yes
+    > browser, node (selecionar ambos)
+    > Use a popular style guide > airbnb
+    > JSON
+    > Yes > package-lock.json > executar comando: yarn
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+. Adicionar prettier
+  yarn -D add prettier eslint-plugin-prettier eslint-config-prettier
+    > Configurar arquivo: .eslintrc.json
+    > Adicionar arquivo: .eslintignore
+    > Adicionar arquivo: prettier.config.js
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+. Adicionar editorconfig
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+. Adicionar styled-components
+  yarn -D add @types/styled-components
+    > Adicionar arquivo: babel.config.js
 
-## Learn More
+. Adicionar next-images
+  yarn add next-images
+    > Adicionar arquivo: next.config.js
 
-To learn more about Next.js, take a look at the following resources:
+. Adicionar babel-plugin-inline-react-svg
+    > Adicionar aos plugins do babel: babel.config.js
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
